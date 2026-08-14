@@ -14,7 +14,7 @@ Para ejecutar este proyecto de forma local y evaluarlo correctamente, necesitas 
 
 Antes de encender el servidor, es necesario crear la base de datos y la tabla correspondiente.
 
-1. Abre tu consola de PostgreSQL (`psql`) o tu cliente gráfico preferido
+1. Abre tu consola de PostgreSQL (`psql`) o la interfaz que prefieras.
 2. Crea la base de datos ejecutando el siguiente comando:
    ```sql
    CREATE DATABASE likeme;
