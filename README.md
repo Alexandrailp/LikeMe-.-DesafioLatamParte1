@@ -16,11 +16,12 @@ Antes de encender el servidor, es necesario crear la base de datos y la tabla co
 
 1. Abre tu consola de PostgreSQL (`psql`) o la interfaz que prefieras.
 2. Crea la base de datos ejecutando el siguiente comando:
-   ```sql
+
+   ``` sql
    CREATE DATABASE likeme;
-    ```
-3. Conéctate a la base de datos recién creada (\c likeme si estás usando la terminal psql).
-4. Crea la tabla posts ejecutando la siguiente instrucción:
+   ```
+4. Conéctate a la base de datos recién creada (\c likeme si estás usando la terminal psql).
+5. Crea la tabla posts ejecutando la siguiente instrucción:
       ```sql
       CREATE TABLE posts (
           id SERIAL, 
@@ -29,7 +30,7 @@ Antes de encender el servidor, es necesario crear la base de datos y la tabla co
           descripcion VARCHAR(255), 
           likes INT
       );   
-    ```
+     ```
 ## ⚙️ Paso 2: Configuración y Ejecución del Backend
 
 1. Abre una terminal y navega hasta la carpeta del backend:
@@ -42,7 +43,7 @@ Antes de encender el servidor, es necesario crear la base de datos y la tabla co
       ```
 ¡IMPORTANTE! Abre el archivo index.js ubicado en la carpeta backend y modifica las credenciales en la configuración de Pool para que coincidan con tu usuario y contraseña de PostgreSQL local
 
-      ```bash
+   ```bash
       const pool = new Pool({
         host: 'localhost',
         user: 'postgres',
@@ -50,7 +51,7 @@ Antes de encender el servidor, es necesario crear la base de datos y la tabla co
         database: 'likeme',
         allowExitOnIdle: true
       });
-      ```
+   ```
 
 3. Enciende el servidor
       ```bash
