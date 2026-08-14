@@ -22,13 +22,13 @@ Antes de encender el servidor, es necesario crear la base de datos y la tabla co
 3. Conéctate a la base de datos recién creada (\c likeme si estás usando la terminal psql).
 4. Crea la tabla posts ejecutando la siguiente instrucción:
       ```sql
-   CREATE TABLE posts (
-    id SERIAL, 
-    titulo VARCHAR(25), 
-    img VARCHAR(1000), 
-    descripcion VARCHAR(255), 
-    likes INT
-  );
+      CREATE TABLE posts (
+          id SERIAL, 
+          titulo VARCHAR(25), 
+          img VARCHAR(1000), 
+          descripcion VARCHAR(255), 
+          likes INT
+      );   
     ```
 ## ⚙️ Paso 2: Configuración y Ejecución del Backend
 
