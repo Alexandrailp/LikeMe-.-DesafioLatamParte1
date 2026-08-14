@@ -42,6 +42,16 @@ Antes de encender el servidor, es necesario crear la base de datos y la tabla co
       ```
 ¡IMPORTANTE! Abre el archivo index.js ubicado en la carpeta backend y modifica las credenciales en la configuración de Pool para que coincidan con tu usuario y contraseña de PostgreSQL local
 
+      ```bash
+      const pool = new Pool({
+        host: 'localhost',
+        user: 'postgres',
+        password: 'TU_PASSWORD_AQUI', // <-- Modificar esta línea con tu contraseña local
+        database: 'likeme',
+        allowExitOnIdle: true
+      });
+      ```
+
 3. Enciende el servidor
       ```bash
       node index.js
