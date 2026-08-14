@@ -26,6 +26,23 @@ app.get('/posts', async (req, res) => {
   }
 });
 
+app.post('/posts', async (req, res) => {
+  try {
+    const { titulo, url, descripcion } = req.body; 
+
+    const consulta = 'INSERT INTO posts (titulo, img, descripcion, likes) VALUES ($1, $2, $3, $4)';
+
+    const valores = [titulo, url, descripcion, 0];
+
+    await pool.query(consulta, valores);
+
+    res.send("Post agregado con éxito");
+  } catch (error) {
+    console.error("Error al guardar el post:", error);
+    res.status(500).json({ error: "Error al intentar guardar el post" });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`¡Servidor encendido y escuchando en el puerto ${PORT}!`);
 });
