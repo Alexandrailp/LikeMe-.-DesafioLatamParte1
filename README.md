@@ -73,7 +73,7 @@ Antes de encender el servidor, es necesario crear la base de datos y la tabla co
     ```
 Abre tu navegador web en la dirección que indique la terminal (por defecto suele ser http://localhost:5173).
 
-### 🚀 PProyecto
+### 🚀 Utiliza la App!
 Para probar la ruta POST y GET:
 - Ingresa un título en la aplicación.
 - Ingresa una URL de imagen válida.
